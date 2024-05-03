@@ -1,0 +1,119 @@
+.TodoApp{
+  height: 100vh;
+  width: 100vw;
+  color:var(--dark-grayish-blue);
+  font-size: 20px;
+  background-image: url('./assets/images/bg-mobile-dark.jpg');
+  background-repeat: no-repeat;
+  min-width: 375px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.todo-header{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  padding: 2rem;
+}
+.todo-main{
+  width: 375px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 0rem 2rem;
+}
+.todo-input-wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: .5rem;
+  align-items: center;
+  box-shadow: 
+  0 0 5px 1px black;
+  background-color: var(--very-dark-grayish-blue);
+}
+#todo-input{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color:var(--very-dark-grayish-blue) ;
+  border-radius: 10px;
+  color: var(--dark-grayish-blue);
+}
+#todo-input:focus-visible{
+  outline: none;
+}
+.todo-button{
+  width: 40px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: var(--very-dark-grayish-blue);
+  margin-left: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  box-shadow: 
+  0 0 5px 1px black;
+}
+.todo-tasks{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 
+  0 0 5px 1px black;
+  background-color: var(--very-dark-grayish-blue);
+}
+.todo-task{
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.todo-task-input{
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  min-width: 40px;
+}
+input[type='checkbox'] {
+  accent-color: green
+}
+
+.todo-states{
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  justify-content: center;
+}
+.todo-task-delete{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background:none;
+  cursor: pointer;
+}
+
+p{
+  overflow: hidden
+}
+@media(width > 375px){
+  .TodoApp{
+    background-image: url('./assets/images/bg-desktop-dark.jpg');
+  }
+}
+.todo-h1{
+  color: var(--very-light-gray);
+}
+.todo-main{}
+.todo-form{}
+.todo-input{}
